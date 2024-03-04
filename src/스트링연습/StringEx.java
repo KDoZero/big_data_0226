@@ -43,9 +43,9 @@ public class StringEx {
         String buffer = String.format("I eat %d apples. %d banana", 3, 5);
         System.out.printf(buffer);
         // to char Array() : 문자열을 문자 배열로 변환
-        String addr = "Seoul Gangnamgu";
-        char[] addrCh = addr.toCharArray();
-        for(char ee : addrCh) System.out.print(e + " ");
+        String addr1 = "Seoul Gangnamgu";
+        char[] addrCh1 = addr1.toCharArray();
+        for(char ee : addrCh1) System.out.printf(ee + " ");
 
 
 
