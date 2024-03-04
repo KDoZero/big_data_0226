@@ -3,7 +3,7 @@ package 나머지연산자연습;
 import java.util.Scanner;
 
 // 100의 자리 정수를 입력받아서 3개의 변수에 나눠 담기
-// ex) 257 => a변수에 2, b변수에 5, c변수에 7
+
 public class ModEx {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

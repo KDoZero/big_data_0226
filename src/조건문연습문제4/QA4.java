@@ -1,4 +1,4 @@
-package 조건문연습문제4모범답안;
+package 조건문연습문제4;
 import java.util.Scanner;
 
 public class QA4 {
