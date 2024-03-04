@@ -8,7 +8,7 @@ public class KmpEx2 {
         String name = sc.next();
         // 첫번째 방법 : charAt() 사용하는 방법 (대문자만 골라냄)
         for(int i = 0; i < name.length(); i++) {
-            if(name.charAt(i) >= 'A' && name.charAt(i) <= 'Z'); {
+            if(name.charAt(i) >= 'A' && name.charAt(i) <= 'Z') {
                 System.out.print(name.charAt(i));
             }
         }

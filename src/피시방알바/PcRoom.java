@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class PcRoom {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("");
         int member = sc.nextInt();
         int[] seat = new int[member];
         int error = 0;
