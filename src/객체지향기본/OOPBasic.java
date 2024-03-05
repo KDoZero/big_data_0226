@@ -31,7 +31,8 @@ class Student {
     //접근제한자 : 해당 메소드에 접근할 수 있는 범위를 명시 (public, default, protected, private)
     //반환 타입 : 메소드가 작업을 마치고 반환하는 데이터 타입을 명시 (void는 반환 할게 없다는 의미)
     //메소드 이름 : 메소드를 호출하기 위한 이름 (객체이름, 메소드이름)
-    //매개변수 목록
+    //매개변수 목록 :
+    //구현부가 있음.
     public int setStudentName(String name){
         if(name == null) return 100;
         studentName = name;
@@ -45,6 +46,6 @@ class Student {
     //메소드 추가
     public void showStudentInfo(){
         System.out.println(studentName + ", " + address);
-    }
 
+    }
 }
