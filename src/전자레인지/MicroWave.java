@@ -7,11 +7,10 @@ public class MicroWave {
         int A = 300;
         int B = 60;
         int C = 10;
-        int a = 0, b = 0, c = 0;
+        int a = 0, b = 0, c;
         Scanner sc = new Scanner(System.in);
         System.out.print("요리 시간을 입력해주세요 : ");
         int T = sc.nextInt();
-        int t;
 
         if(T / A != 0) {
             a = T / A;
@@ -24,7 +23,7 @@ public class MicroWave {
         c = T / C;
         T -= (10*c);
 
-        if(T / 1 == 0) {
+        if(T == 0) {
             System.out.println("A " + a + "번, B " + b + "번, C " + c + "번 눌러주세요.");
         } else System.out.println(-1);
     }
