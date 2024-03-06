@@ -21,6 +21,7 @@ public class Home{
 
             }
             rst.add(sum + 1); //맨앞의 여백에 대한 +1
+            sum = 0;
         }
         for(int e : rst) System.out.println(e);
     }
