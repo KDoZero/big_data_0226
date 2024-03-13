@@ -56,8 +56,9 @@ public class CoffeeMenuMain {
                         int price = sc.nextInt();
                         System.out.print("카테고리 입력 : ");
                         String category = sc.next();
+                        sc.nextLine(); //버퍼비우기
                         System.out.print("설명 입력 : ");
-                        String desc = sc.next();
+                        String desc = sc.nextLine();
                         map.put(key,new MenuInfo(key, price, category, desc));
                     }
                     break;
@@ -79,8 +80,9 @@ public class CoffeeMenuMain {
                         int price = sc.nextInt();
                         System.out.print("카테고리 입력 : ");
                         String category = sc.next();
+                        sc.nextLine(); //버퍼비우기
                         System.out.print("설명 입력 : ");
-                        String desc = sc.next();
+                        String desc = sc.nextLine();
                         map.replace(key, new MenuInfo(key, price, category, desc));
                     } else {
                         System.out.println("수정할 메뉴가 존재하지 않습니다.");
