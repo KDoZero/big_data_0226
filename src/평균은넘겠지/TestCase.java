@@ -1,6 +1,4 @@
 package 평균은넘겠지;
-
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class TestCase {
@@ -25,7 +23,6 @@ public class TestCase {
             cnt = 0;
         }
         for(int i = 0; i < tc; i++) {
-//            System.out.println((Math.round(arr[i] * 100000)) / 1000);
             arr[i] = (Math.round(arr[i] * 100000));
             System.out.println(arr[i] / 1000 + "%");
         }
