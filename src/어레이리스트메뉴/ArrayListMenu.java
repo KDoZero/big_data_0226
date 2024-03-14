@@ -6,7 +6,7 @@ public class ArrayListMenu {
     public static void main(String[] args) {
         List<MenuInfo> menuList = new ArrayList<>();
         menuList.add(new MenuInfo("Americano",2800,"Coffee", "커피", true));
-        menuList.add(new MenuInfo("Latte", 3500, "Coffee", "우유", true));
+        menuList.add(new MenuInfo("Latte", 1500, "Coffee", "우유", true));
         menuList.add(new MenuInfo("BlackTea", 4500, "Tea", "홍차", false));
         for(MenuInfo menu : menuList) System.out.println(menu.getJsonFormat());
         }
