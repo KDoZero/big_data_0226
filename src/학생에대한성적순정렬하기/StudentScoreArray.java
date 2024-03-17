@@ -4,32 +4,31 @@ import java.util.Iterator;
 import java.util.Scanner;
 import java.util.TreeSet;
 
-public class StudentScoreArray {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        TreeSet<Grade> treeSet = new TreeSet<>();
-        for(int i = 0; i < n; i++) {
-            String name = sc.next();
-            int score = sc.nextInt();
-            treeSet.add(new Grade(name,score));
-        }
-
+public class StudentScoreArray {public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    TreeSet<StudentInfo> list = new TreeSet<>();
+    int num = sc.nextInt();
+    for(int i = 0; i < num; i++) {
+        String name = sc.next();
+        int score = sc.nextInt();
+        list.add(new StudentInfo(name, score));
     }
+    for(StudentInfo e : list) System.out.println(e.name + " : " + e.score);
+}
 }
 
-class Grade {
-    String name = "";
+class StudentInfo implements Comparable<StudentInfo> {
+    String name;
     int score;
-    public Grade(String name, int score) {
+
+    public StudentInfo(String name, int score) {
         this.name = name;
         this.score = score;
     }
-}
 
     @Override
-    public int compare(Grade o) {
-        if(this.score < o.score) return 1;
+    public int compareTo(StudentInfo o) {
+        if(this.score > o.score) return 1;
         else if(this.score == o.score) {
             return name.compareTo(o.name);
         } else return -1;
