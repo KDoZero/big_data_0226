@@ -1,6 +1,4 @@
 package 학생에대한성적순정렬하기;
-import java.util.Comparator;
-import java.util.Iterator;
 import java.util.Scanner;
 import java.util.TreeSet;
 
